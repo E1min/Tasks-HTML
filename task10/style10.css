@@ -1,0 +1,62 @@
+section {
+    background-color: #59316b;
+
+
+
+}
+
+h1,
+h6 {
+    text-align: center;
+    font-weight: 50;
+    color: white;
+    margin: 5px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+    padding-top: 50px;
+    font-weight: 50;
+    font-size: 36px;
+}
+
+.loqo {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    justify-content: center;
+}
+
+button {
+    height: 30px;
+    background-color: #7d4698;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    border:none;
+    padding: 8px;
+    font-size: 10px;
+    display:block;
+    
+
+}
+
+.item {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #401753;
+    border-radius: 60px;
+    
+}
+
+.item i {
+    font-size: 40px;
+    display: flex;
+    margin-top: 25px;
+    overflow: hidden;
+    justify-content: center;
+    
+
+}
