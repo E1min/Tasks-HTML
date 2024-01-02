@@ -13,7 +13,7 @@ body {
 
 h1 {
   color: #000;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   font-size: 55px;
   font-style: normal;
   font-weight: 700;
@@ -25,7 +25,6 @@ h1 {
 
 h6 {
   color: #000;
-  font-family: Roboto;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -41,16 +40,19 @@ h6 {
 .img2 {
   width: 232px;
   height: 203px;
+  margin-right: 132px;
 }
 
 .text {
   width: 662px;
   height: 374px;
   color: #000;
-  font-family: Roboto;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 150%;
 }
 
+.row {
+  margin-bottom: 94px;
+}/*# sourceMappingURL=style.css.map */
