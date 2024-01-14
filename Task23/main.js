@@ -181,6 +181,112 @@ undefined + 1 =*/
 //*konsola «Salam,'ad'!» mesajını çıxarır.
 
 // let Name=prompt("Soyad ve Adinizi yazin:");
-// let words=String(Name.split(" "));
-// console.log(`Salam, ${words[2]}!`);
+// let words=Name.split(" ");
+// console.log(`Salam, ${words[1]}!`);
 
+//!Task-19
+//* Qiyməti mətn halına salan proqram tərtib edin.
+//* İstifadəçidən «530.90» formatında qiymət daxil etməyi xahiş edən və
+//* qiyməti «530 manat 90 qəpik» formatında konsola çıxaran proqram tərtib edin.
+
+// let price=prompt("Qiymet daxil edin(Qeyd:530.90 formatinda olsun):")
+// let p1=price.split(".")
+// console.log(` ${p1[0]} manat , ${p1[1]} qepik `);
+
+//!Task-20
+//* Vergi nəzərə alınmadan əmək haqqı məbləğini hesablayan proqram tərtib edin.
+//* Proqram istifadəçidən əmək haqqı məbləğin soruşur və
+//* 13% vergi istisna olmaqla məbləği konsola çıxarır.
+
+// let fix=prompt("Fix emekhaqqini daxil edin:")
+// let net=fix-(fix*13/100)
+// console.log(`Sizin net emekhaqqiniz : ${net} manat.`);
+
+//!Task-21
+//* İstifadəçidən soyad, ad və ata adını istəyən,
+//* soyadı və baş hərfləri konsola çıxaran proqram tərtib edin.
+//* Məsələn, «İvanov Pyotr Sergeevich» — «İvanov P.S.».
+
+// let fullName=prompt("Soyad Ad Ata adini muvafiq olaraq qeyd edin")
+// let surName=fullName.split(" ")
+// console.log(`${surName[0]} ${surName[1][0]}.${surName[2][0]} `);
+
+//!Task-22
+//* Depozitdən mənfəətin hesablanması üçün proqram yazın.
+//* Proqram istifadəçidən əmanətin məbləğini, müddətini və
+//* faiz dərəcəsini daxil etməsini istəyir və gözlənilən mənfəəti hesablayır.
+
+// let dt=prompt("3 illik emanet edilen depozitin meblegini qeyd edin:")
+// let pc=prompt("illik faiz derecesini qeyd edin:")
+// let yr1=Number(dt) +(dt*pc /100)
+// let yr2=Number(yr1) +(yr1*pc /100)
+// let yr3=Number(yr2) +(yr2*pc /100)
+// console.log(`Sizin 3 illik menfeetiniz ${yr3}-dir.`);
+
+//!Task-23
+//* Müxtəlif müqayisə operatorları ilə 5 ifadə yazın.
+//* value dəyişəni üçün müxtəlif müqayisə operatorları ilə 5 ifadə yazın,
+//* hansıki əməliyyat nəticəsi value = 10 üçün true və value = 20 üçün false olacaq.
+
+// let value=20
+// let var1=5
+// console.log(value<15 );
+// console.log(value<=10);
+// console.log(value==10);
+// console.log(value-var1==5);
+// console.log(value*var1<55);
+
+//!Task-24
+//* İstifadəçidən yaşını soruşun.
+//* Əgər yaşı 18-dən azdırsa, o zaman brauzerdə «Access denied» bildirişi çıxarın.
+//* Əks halda «Access granted» bildirişini çıxarın.
+
+// let age=prompt("Yasinizi daxil edin:")
+// if (age>18) {
+//     console.log("«Access granted»");
+// }else{
+//     console.log("«Access denied»");
+// }
+
+//!Task-25
+//* Üç ədədin ortancılını tapmaq üçün proqram yazın.
+//* İstifadəçidən bir bildirişlə üç ikirəqəmli ədəd daxil etməsini xahiş edin.
+//* Konsola orta ədədi, yəni nə ən böyüyü, nə də ən kiçiyini çıxarmayın.
+//* İstifadəçi bir neçə eyni nömrə daxil edibsə, xəta bildirişi çıxarın.
+//* "45 46 47"
+// *"47 46 45"
+//*"46 45 47"
+//* "46 47 45"
+
+// let num=prompt("Bosluq buraxaraq 3 defe ikireqemli eded qeyd edin: ")
+// let cut=num.split(" ")
+// let a=Number(cut[0]);
+// let b=Number(cut[1]);
+// let c=Number(cut[2]);
+
+// if (a>b>c) {
+//     console.log(b);
+// } else if (b>a>c) {
+//     console.log(a);
+// } else if (c>b>a) {
+//     console.log(b);
+// } else if (c>a>b) {
+//     console.log(a);
+// } else if (b>c>a) {
+//     console.log(c);
+// } else if (a>c>b) {
+//     console.log(c);} 
+
+//!Task-26
+//*İstifadəçidən bir il daxil etməsini soruşun və ilin uzun il olub olmadığını yoxlayın.
+//* Uzun il 4-ə qalıqsız bölünən ildir.
+//*Daxil edilmiş il uzun ildirsə, konsola mesaj cıxarın.
+//*«İl uzun il deyil» və ya «İl uzun ildir»mesajını çıxarın.
+
+// let year=prompt("il daxil edin:")
+// let yr1=year/4
+// if (yr1=Intl) {
+//     console.log(`${year} «İl uzun ildir»`);
+// }else{
+//     console.log(`${year} «İl uzun il deyil»`);
+// }
