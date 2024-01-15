@@ -281,14 +281,14 @@ undefined + 1 =*/
 // else if (a>c>b) {
 //     console.log(c);}
 
-//?Task-26
+//!Task-26
 //*İstifadəçidən bir il daxil etməsini soruşun və ilin uzun il olub olmadığını yoxlayın.
 //*Uzun il 4-ə qalıqsız bölünən ildir.
 //*Daxil edilmiş il uzun ildirsə, konsola mesaj cıxarın.
 //*«İl uzun il deyil» və ya «İl uzun ildir»mesajını çıxarın.
 
 // let year=prompt("il daxil edin:")
-// let yr1=year/4
+// let yr1=year%4
 // if (yr1 === 0) {
 //     alert(`${year} İl uzun ildir`);
 // }else{
