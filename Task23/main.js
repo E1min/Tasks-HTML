@@ -263,22 +263,22 @@ undefined + 1 =*/
 // let a=Number(cut[0]);
 // let b=Number(cut[1]);
 // let c=Number(cut[2]);
-// if (a>b>c) {
+// if (a>b && b>c) {
 //     console.log(b);
 // }
-// else if (b>a>c) {
+// else if (b>a && a>c) {
 //     console.log(a);
 // }
-// else if (c>b>a) {
+// else if (c>b && b>a) {
 //     console.log(b);
 // }
-//  else if (c>a>b) {
+//  else if (c>a && a>b) {
 //     console.log(a);
 // }
-//  else if (b>c>a) {
+//  else if (b>c && c>a) {
 //     console.log(c);
 // }
-// else if (a>c>b) {
+// else if (a>c && c>b) {
 //     console.log(c);}
 
 //!Task-26
