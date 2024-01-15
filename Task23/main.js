@@ -248,14 +248,14 @@ undefined + 1 =*/
 //     console.log("«Access denied»");
 // }
 
-//!Task-25
+//?Task-25
 //* Üç ədədin ortancılını tapmaq üçün proqram yazın.
 //* İstifadəçidən bir bildirişlə üç ikirəqəmli ədəd daxil etməsini xahiş edin.
 //* Konsola orta ədədi, yəni nə ən böyüyü, nə də ən kiçiyini çıxarmayın.
 //* İstifadəçi bir neçə eyni nömrə daxil edibsə, xəta bildirişi çıxarın.
 //* "45 46 47"
-// *"47 46 45"
-//*"46 45 47"
+//* "47 46 45"
+//* "46 45 47"
 //* "46 47 45"
 
 // let num=prompt("Bosluq buraxaraq 3 defe ikireqemli eded qeyd edin: ")
@@ -263,30 +263,154 @@ undefined + 1 =*/
 // let a=Number(cut[0]);
 // let b=Number(cut[1]);
 // let c=Number(cut[2]);
-
 // if (a>b>c) {
 //     console.log(b);
-// } else if (b>a>c) {
+// }
+// else if (b>a>c) {
 //     console.log(a);
-// } else if (c>b>a) {
+// }
+// else if (c>b>a) {
 //     console.log(b);
-// } else if (c>a>b) {
+// }
+//  else if (c>a>b) {
 //     console.log(a);
-// } else if (b>c>a) {
+// }
+//  else if (b>c>a) {
 //     console.log(c);
-// } else if (a>c>b) {
-//     console.log(c);} 
+// }
+// else if (a>c>b) {
+//     console.log(c);}
 
-//!Task-26
+//?Task-26
 //*İstifadəçidən bir il daxil etməsini soruşun və ilin uzun il olub olmadığını yoxlayın.
-//* Uzun il 4-ə qalıqsız bölünən ildir.
+//*Uzun il 4-ə qalıqsız bölünən ildir.
 //*Daxil edilmiş il uzun ildirsə, konsola mesaj cıxarın.
 //*«İl uzun il deyil» və ya «İl uzun ildir»mesajını çıxarın.
 
 // let year=prompt("il daxil edin:")
 // let yr1=year/4
-// if (yr1=Intl) {
-//     console.log(`${year} «İl uzun ildir»`);
+// if (yr1 === 0) {
+//     alert(`${year} İl uzun ildir`);
 // }else{
-//     console.log(`${year} «İl uzun il deyil»`);
+//     alert(`${year} İl uzun il deyil`);
 // }
+
+//!Task-27
+//* if...else operatoru ilə yazllmış kodu switch operatoruna dəyişdirməklə kodu yenidən yazın.
+
+// let id = prompt ('enter product id:');
+// switch (id) {
+//     case '1':
+//         alert('Available 10 pcs.');
+//         break;
+//     case '2':
+//         alert('Available 256 pcs.');
+//         break;
+//     case '3':
+//         alert('Available 53 pcs.');
+//         break;
+//     case '4':
+//         alert('There are 3 available.');
+//         break;
+//     default:
+//         alert('Out of stock');
+//         break;
+// }
+
+
+//!Task-28
+//* İstifadəçidən onun cinsini (M və ya F hərfləri şəklində) sorğulayan və
+//* gender dəyişəninə male yaxud female sözlərindən birini yazdıran proqramı yazın
+
+// let gender=prompt("Cinsinizin bas herfini K ve ya Q seklinde qeyd edin:")
+// if (gender==="K") {
+//     alert("Kisi");
+// }else if (gender==="Q"){
+//     alert("Qadin");
+// }
+// else{
+//     alert("Zehmet olmasa K veya Q olaraq cins yazin!");
+// }
+
+//!Task-29
+//* Ayın adını mətnlə konsola yazdıran bir program yazın.
+//* İstifadəçidən ayın nömrəsini soruşun və adını konsola çıxarın.
+
+// let month=prompt("Ayı rəqəm ilə daxil edin:")
+
+// switch (month) {
+//     case "1":
+//         alert("Yanvar ayı")
+//         break;
+//     case "2":
+//         alert("Fevral ayı")
+//         break;
+//    case "3":
+//         alert("Mart ayı")
+//         break;
+//     case "4":
+//         alert("Aprel ayı")
+//         break;
+//     case "5":
+//         alert("May ayı")
+//         break;
+//     case "6":
+//         alert("Iyun ayı")
+//         break;
+//     case "7":
+//         alert("Iyul ayı")
+//         break;
+//     case "8":
+//         alert("Avqust ayı")
+//         break;
+//     case "9":
+//         alert("Sentyabr ayı")
+//         break;
+//     case "10":
+//         alert("Oktyabr ayı")
+//         break;
+//     case "11":
+//         alert("Noyabr ayı")
+//         break;
+//     case "12":
+//         alert("Dekabr ayı")
+//         break;
+//     default :
+//         alert("12 ay var !!!")
+// }
+
+//!Task-30
+//* İstifadəçi tərəfindən daxil edilmiş tarixin təsvirini çıxarın.
+//* İstifadəçidən tarixi «2009.12.19» formatında daxil etməyi xahiş edin.
+//* Tarixin təsvirini «19 Dekabr 2009-cu il» formatında çıxarın.
+//* Daxil edilmiş dəyərə validator əlavə edin.
+//* İstifadəçi səhv formatda dəyər daxil edərsə, «Yanlış dəyər daxil edilib» bildirişi göstərin.
+
+// let date=prompt("'2001.01.25'formatinda tarix qeyd edin:")
+// let part=date.split(".")
+// if (part[1]==="01") {
+//     month = "Yanvar"
+// } else if(part[1]==="02"){
+//     month = "Fevral"
+// }  else if(part[1]==="03"){
+//     month = "Mart"
+// }  else if(part[1]==="04"){
+//     month = "Aprel"
+// }  else if(part[1]==="05"){
+//     month = "May"
+// }  else if(part[1]==="06"){
+//     month = "Iyun"
+// }  else if(part[1]==="07"){
+//     month = "Iyul"
+// }  else if(part[1]==="08"){
+//     month = "Avqust"
+// }  else if(part[1]==="09"){
+//     month = "Sentyabr"
+// }  else if(part[1]==="10"){
+//     month = "Oktyabr"
+// }  else if(part[1]==="11"){
+//     month = "Noyabr"
+// }  else if(part[1]==="12"){
+//     month = "Dekabr"
+// }
+// console.log(`${part[2]} ${month} ${part[0]}`);
