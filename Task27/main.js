@@ -13,14 +13,19 @@
 // users.shift()
 // console.log(users);
 
-//? Task-02
+//! Task-02
 
 //* Massivin maksimal dəyərini tapın.
 //* 10 rəqəmdən ibarət massiv yaradın.
 //* Massiv deyil, arqumentlər qəbul edən Math.max funksiyasından istifadə edərək onların arasında maksimumu tapın.
 //* spread-operatorundan istifadə edərək massiv arqumentlərini funksiyaya ötürün.
 
-// let num=[65,15,54,8,48,25,9,7,14,53]
+// let num=[65,15,54,8,48,25,99,75,14,53]
+
+// console.log(Math.max(...num))
+
+
+
 
 //! Task-03
 
@@ -207,18 +212,20 @@
 // })
 // console.log(newList);
 
-//? Task-12
+//! Task-12
 
 //* ƏDV xaric qiymətlər saxlayan massivini qəbul edən və ƏDV daxil olmaqla olan qiymətlərdən ibarət yeni massiv qaytaran funksiya yazın.
 //* addTax() funksiyası yaradın. Verilmiş ƏDV-siz qiymətlərlə olan price massivini ona ötürün. addTax() funksiyasının köməyi ilə ƏDV ilə
 //* qiymətlərin daxil olduğu massiv yaratın və onu konsola çıxarın. ƏDV 20% təşkil edir.
 
-// let price=[400,500,345,410,700]
+// let price=[100,400,500,345,410,700]
+// let tax=price.map(item=> {
+//       return item+item*20/100
+// })
+// console.log(`Edv-siz qiymet:${price}`);
+// console.log(`Edv-daxil qiymet:${tax}`);
 
-
-
-
-//? Task-13
+//! Task-13
 
 //* Ədədlər massivindəki tək və cüt ədədləri saymaq üçün proqram yazın.
 //* Rəqəmlər massivini parametr kimi qəbul edən və massivdə neçə tək və cüt ədədin
@@ -226,3 +233,14 @@
 //* Numune: Funksiya «Massivdə 4 cüt və 2 tək ədəd var» formasında mesaj qaytarır.
 
 // let numbers=[1,2,4,5,6,7,8,9,10]
+// let cut=[]
+// let tek=[]
+// numbers.forEach(item=>{
+//     if (item %2 ===0) {
+//         cut.push(item)
+//     }else{
+//         tek.push(item)
+//     }
+// })
+// console.log(`Cut ededlerin sayi:${cut.length}`);
+// console.log(`Tek ededlerin sayi:${tek.length}`);
