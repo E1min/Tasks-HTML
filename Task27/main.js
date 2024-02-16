@@ -58,7 +58,7 @@
 //* - İstifadəçi «=» işarəsini daxil edərsə, proqram dayanır və növbə massivini konsola çıxarır.
 
 // let users = ["Tural Hesenov", "Fuad Memmedov", "Cavid Huseyinov"]
-// let a = "="
+// let a = prompt("")
 // for (let i = 0; i < users.length; i++) {
 //     if (a !== "=" && a !== " " && users[i].toUpperCase() !== a.toUpperCase()) {
 //         users.push(a)
@@ -207,7 +207,7 @@
 // })
 // console.log(newList);
 
-//! Task-12
+//? Task-12
 
 //* ƏDV xaric qiymətlər saxlayan massivini qəbul edən və ƏDV daxil olmaqla olan qiymətlərdən ibarət yeni massiv qaytaran funksiya yazın.
 //* addTax() funksiyası yaradın. Verilmiş ƏDV-siz qiymətlərlə olan price massivini ona ötürün. addTax() funksiyasının köməyi ilə ƏDV ilə
@@ -218,8 +218,11 @@
 
 
 
-// Task-13
-// Ədədlər massivindəki tək və cüt ədədləri saymaq üçün proqram yazın.
-// Rəqəmlər massivini parametr kimi qəbul edən və massivdə neçə tək və cüt ədədin
-// olması barədə məlumatıqaytaran countEvensAndOdds() funksiyasını yazın.
-// Numune: Funksiya «Massivdə 4 cüt və 2 tək ədəd var» formasında mesaj qaytarır.
+//? Task-13
+
+//* Ədədlər massivindəki tək və cüt ədədləri saymaq üçün proqram yazın.
+//* Rəqəmlər massivini parametr kimi qəbul edən və massivdə neçə tək və cüt ədədin
+//* olması barədə məlumatıqaytaran countEvensAndOdds() funksiyasını yazın.
+//* Numune: Funksiya «Massivdə 4 cüt və 2 tək ədəd var» formasında mesaj qaytarır.
+
+// let numbers=[1,2,4,5,6,7,8,9,10]
