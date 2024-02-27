@@ -38,7 +38,7 @@
 
 // document.querySelectorAll("li").forEach(item=>{
 //     if (item.className ==="primary") {
-//         console.log(item.textContent);
+//         console.log(item.innerText);
 //     }
 // })
 
