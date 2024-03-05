@@ -1,0 +1,143 @@
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(1, 8, 6, 0.774);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loggo {
+    width: 130px;
+    height: 90px;
+}
+
+
+.head-left {
+    margin-left: 15px;
+
+}
+
+.head-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 5px;
+}
+
+.head-center .axtar {
+    width: 70%;
+    height: 40px;
+    background-color: black;
+    border-radius: 40px;
+    color: aliceblue;
+    align-items: center;
+    border: 1px solid rgb(85, 73, 73);
+}
+
+.head-center .fa-solid {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.head-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.rightbar{
+    display: flex;
+    justify-content: right;
+    background-color: rgba(80, 70, 70, 0.938);
+    position: absolute;
+    top: 100px;
+    left: 1220px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    gap: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgba(250, 235, 215, 0.486);
+}
+
+li i {
+    display: flex;
+    margin-right: 5px;
+}
+
+ul li:last-child {
+    margin-right: 10px;
+}
+
+
+
+
+.sidebar{
+    width: 150px;
+    height: 90vh;
+    border-right: 1px solid gray;
+    background-color: rgba(80, 70, 70, 0.938);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.sidebar ul li{
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    color: rgba(250, 235, 215, 0.486);
+    border-bottom: 1px solid ;
+}
+
+.container{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    max-width: 1080px;
+    width: 72%;
+}
+
+.login{
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+    transition:.5s all;
+}
+
+ul li{
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+input:invalid{
+    border-color: red;
+}
+input:invalid + span::before{
+    content: "✕";
+    color: red;
+}
+input:valid{
+    border-color:green;
+}
+input:valid + span::before{
+    content: "✓";
+    color: green;
+}
