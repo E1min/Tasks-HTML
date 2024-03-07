@@ -66,6 +66,7 @@ button{
 .container:has(.gridbox:nth-child(10)){
     grid-template-columns: repeat(4,1fr);
 }
-.container:has(.gridbox:nth-child(20)){
-    grid-template-columns: repeat(10,1fr);
+.container:has(.gridbox:nth-child(13)) .gridbox{
+    display: none;
 }
+
