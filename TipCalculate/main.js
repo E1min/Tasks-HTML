@@ -8,17 +8,19 @@ let notfelem = document.querySelector(".notf");
 let resetbtn = document.querySelector(".button button");
 let percent = [];
 
+
+
+
 tips.forEach(item => {
     item.addEventListener("click", () => {
         tips.forEach(item => item.classList.remove("active"))
         item.classList.toggle("active")
+        resetbtn.className = "btnactive"
         percent.unshift(item.textContent.slice(0, -1));
         custom.value = ""
         displayAmount.textContent = `$${((billinput.value * percent[0]) / 100) / numpeopleinput.value}`
         displayTotal.textContent = `$${(+billinput.value + (billinput.value * percent[0]) / 100) / numpeopleinput.value}`
-        if (displayTotal.textContent !== "$0.00") {
-            resetbtn.className = "btnactive"
-        }
+       
     })
 
 
@@ -41,15 +43,18 @@ tips.forEach(item => {
         }
         else {
             item.classList.remove("active")
+            resetbtn.className = "btnactive"
             displayAmount.textContent = `$${((billinput.value * custom.value) / 100) / numpeopleinput.value}`
             displayTotal.textContent = `$${(+billinput.value + (billinput.value * custom.value) / 100) / numpeopleinput.value}`
         }
 
         billinput.addEventListener("keyup", () => {
             if (billinput.value > 0) {
+                item.classList.remove("active")
                 billinput.classList.remove("numred")
                 displayTotal.textContent = "$0.00"
                 displayAmount.textContent = "$0.00"
+                custom.value = ""
             }
         })
 
