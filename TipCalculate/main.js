@@ -30,12 +30,28 @@ tips.forEach(item => {
         billinput.value = ""
         custom.value = ""
         item.classList.remove("active")
+        billinput.classList.remove("numred")
 
     })
     custom.addEventListener("keyup", () => {
-        item.classList.remove("active")
-        displayAmount.textContent = `$${((billinput.value * custom.value) / 100) / numpeopleinput.value}`
-        displayTotal.textContent = `$${(+billinput.value + (billinput.value * custom.value) / 100) / numpeopleinput.value}`
+        if (billinput.value === "") {
+            billinput.classList.add("numred")
+            displayAmount.textContent = "add bill!";
+            displayTotal.textContent = "add bill!";
+        }
+        else {
+            item.classList.remove("active")
+            displayAmount.textContent = `$${((billinput.value * custom.value) / 100) / numpeopleinput.value}`
+            displayTotal.textContent = `$${(+billinput.value + (billinput.value * custom.value) / 100) / numpeopleinput.value}`
+        }
+
+        billinput.addEventListener("keyup", () => {
+            if (billinput.value > 0) {
+                billinput.classList.remove("numred")
+                displayTotal.textContent = "$0.00"
+                displayAmount.textContent = "$0.00"
+            }
+        })
 
     })
 
