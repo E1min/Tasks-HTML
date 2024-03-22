@@ -54,6 +54,7 @@ tips.forEach(item => {
                 displayTotal.textContent = "$0.00"
                 displayAmount.textContent = "$0.00"
                 custom.value = ""
+                numpeopleinput.value = 1;
             }
         })
 
