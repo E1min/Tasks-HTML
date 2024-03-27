@@ -30,7 +30,7 @@ sendbtn.addEventListener("click", () => {
         else if (nocancelelem.checked) {
             setTimeout(() => {
                 divelem.remove()
-            }, durationelem.value);
+            }, durationelem.value*1000);
         }
         divelem.className = "succes"
         deletebtn.addEventListener("click", () => {
@@ -54,7 +54,7 @@ sendbtn.addEventListener("click", () => {
         else if (nocancelelem.checked) {
             setTimeout(() => {
                 divelem.remove()
-            }, durationelem.value);
+            }, durationelem.value*1000);
         }
         divelem.className = "error"
         deletebtn.addEventListener("click", () => {
